@@ -1,0 +1,7 @@
+es-CL:
+  activerecord:
+    attributes:
+      spree/variant:
+        critical_stock: Stock crítico
+    spree:
+      critical_stock: Stock crítico
