@@ -18,7 +18,7 @@ module Spree
               end
             else
               if variant.critical_stock >= variant.total_on_hand
-                Spree::CriticalStockMailer.send_warning(product).deliver_now
+                Spree::CriticalStockMailer.send_warning(product, variant).deliver_now
                 variant.has_critical_stock = true
                 variant.save
                 product.has_critical_stock = true

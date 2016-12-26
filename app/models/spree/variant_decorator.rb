@@ -16,7 +16,7 @@ module Spree
             else
               if critical_stock >= total_on_hand
                 if !new_record?
-                  Spree::CriticalStockMailer.send_warning(product).deliver_now
+                  Spree::CriticalStockMailer.send_warning(product, self).deliver_now
                   self.has_critical_stock = true
                   self.product.has_critical_stock = true
                   product.save
