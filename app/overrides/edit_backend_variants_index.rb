@@ -14,9 +14,9 @@ Deface::Override.new(:virtual_path => 'spree/admin/variants/index',
     </thead>
   ')
 
-Deface::Override.new(:virtual_path => 'spree/admin/products/index',
+Deface::Override.new(:virtual_path => 'spree/admin/variants/index',
   :name => 'add_critical_stock_row_to_backend_variants_index',
-  :replace => '[data-hook="variants_header"]',
+  :replace => '[data-hook="variants_row"]',
   :text => '
     <tr id="<%= spree_dom_id variant %>" <%= "style=\'color:red;\'" if variant.deleted? %> data-hook="variants_row">
         <td class="move-handle">
