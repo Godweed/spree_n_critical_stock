@@ -15,10 +15,12 @@ module Spree
               end
             else
               if critical_stock >= total_on_hand
-                Spree::CriticalStockMailer.send_warning(product).deliver_now
-                self.has_critical_stock = true
-                product.has_critical_stock = true
-                product.save
+                if !new_record?
+                  Spree::CriticalStockMailer.send_warning(product).deliver_now
+                  self.has_critical_stock = true
+                  self.product.has_critical_stock = true
+                  product.save
+                end
               end
             end
           else

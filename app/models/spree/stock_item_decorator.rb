@@ -1,7 +1,6 @@
 module Spree
   StockItem.class_eval do
     after_save :check_critical_stock, if: :count_on_hand_changed?
-    after_create :check_critical_stock
     after_destroy :check_critical_stock
 
     private
