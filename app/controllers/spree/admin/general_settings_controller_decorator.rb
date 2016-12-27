@@ -3,7 +3,7 @@ module Spree
     GeneralSettingsController.class_eval do
       def edit
         @preferences_security = []
-        @preferences_mail = [:mail_to_address]
+        @preferences_mail = [:critical_stock_mail_to]
         @preferences_store = [:store_address]
       end
     end
