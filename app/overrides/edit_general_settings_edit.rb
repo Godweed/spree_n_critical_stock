@@ -16,7 +16,7 @@ Deface::Override.new(:virtual_path => 'spree/admin/general_settings/edit',
               <div class="checkbox">
                 <%= label_tag key do %>
                   <%= preference_field_tag(key, Spree::Config[key], type: type) %>
-                  <%= Spree.t(key) %>
+                  <%= Spree.t(key, scope: :n_critical_stock) %>
                 <% end %>
               </div>
           <% end %>

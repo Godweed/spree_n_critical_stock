@@ -6,4 +6,4 @@ es-CL:
   spree:
     n_critical_stock:
       critical_stock: Stock crítico
-      critical_stock_mail_to: Mail de recepción de stock crítico
+      critical_stock_mail: Recepción alertas stock crítico
