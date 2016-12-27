@@ -11,7 +11,7 @@ Deface::Override.new(:virtual_path => 'spree/admin/products/index',
   :insert_before => '[data-hook="admin_products_index_row_actions"]',
   :text => '
      <td class="text-center">
-      <% if product.has_critical_stock %>
+      <% if product.master.has_critical_stock %>
       <span class="label label-not"><i class="glyphicon glyphicon-remove"></i></span>
       <% else %>
       <span class="label label-ok"><i class="glyphicon glyphicon-ok"></i></span>
