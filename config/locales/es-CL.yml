@@ -3,5 +3,6 @@ es-CL:
     attributes:
       spree/variant:
         critical_stock: Stock crítico
-    spree:
+  spree:
+    n_critical_stock:
       critical_stock: Stock crítico
