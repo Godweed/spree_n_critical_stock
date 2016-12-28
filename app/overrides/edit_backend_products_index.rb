@@ -12,9 +12,9 @@ Deface::Override.new(:virtual_path => 'spree/admin/products/index',
   :text => '
      <td class="text-center">
       <% if product.master.has_critical_stock %>
-      <span class="label label-not"><i class="glyphicon glyphicon-remove"></i></span>
+        <span class="label label-not"><i class="glyphicon glyphicon-remove"></i></span>
       <% else %>
-      <span class="label label-ok"><i class="glyphicon glyphicon-ok"></i></span>
+        <span class="label label-ok"><i class="glyphicon glyphicon-ok"></i></span>
       <% end %>
     </td>
   ',
