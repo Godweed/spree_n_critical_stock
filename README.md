@@ -23,3 +23,9 @@ Introduction goes here.
 4. Restart your server
 
   If your server was running, restart it so that it can find the assets properly.
+
+
+
+
+
+Copyright (c) 2017 NNodes, released under the New BSD License

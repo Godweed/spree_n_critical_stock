@@ -3,8 +3,8 @@
 </h4>
 <p>
 <% if @variant.sku.present? %>
-  El producto <%= @product.name %> tiene stock crítico en una de sus variantes
-<% else %>
   El producto <%= @product.name %> tiene stock crítico en la variante con sku <%= @variant.sku %>
+<% else %>
+  El producto <%= @product.name %> tiene stock crítico en una de sus variantes  
 <% end %>
 </p>
