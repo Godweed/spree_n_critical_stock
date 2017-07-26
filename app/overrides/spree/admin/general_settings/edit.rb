@@ -6,7 +6,7 @@ Deface::Override.new(:virtual_path => 'spree/admin/general_settings/edit',
       <div class="panel panel-default security">
         <div class="panel-heading">
           <h1 class="panel-title">
-            <%= Spree.t(:mail_settings) %>
+            <%= Spree.t(:mail_settings, scope: :n_critical_stock) %>
           </h1>
         </div>
 
